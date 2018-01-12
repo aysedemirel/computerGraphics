@@ -1,2 +1,2 @@
 # computerGraphics
-computer graphics project with openGL and C++
+Computer graphics projects with openGL and C++
