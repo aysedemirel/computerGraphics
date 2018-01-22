@@ -52,6 +52,6 @@ Computer graphics projects with openGL and C++
 **o-O:** left leg - bent to the side <br/>
 **v-V:** head - bent to the side <br/>
 **x:** Play a animation(you saved before) <br/>
-**3:** Run animation start <br/>
-**2:** Run animation stop <br/>
+**3:** Run animation stop <br/>
+**2:** Run animation start <br/>
 
