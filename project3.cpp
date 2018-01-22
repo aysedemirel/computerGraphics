@@ -271,7 +271,7 @@ void reshape(int w, int h)
 }
 void fileUp(string name)
 {
-	file.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\" + name + ".txt");
+	file.open("C:\\Projects\\openglStart\\openglStart\\" + name + ".txt");
 	file << head_rotate << " " << right_shoulder << " " << right_elbow << " "
 		<< left_shoulder << " " << left_elbow << " " << right_leg << " "
 		<< right_legelbow << " " << left_leg << " " << left_legelbow << " "
@@ -281,7 +281,7 @@ void fileUp(string name)
 }
 void fileName(string name)
 {
-	file.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\fileName.txt");
+	file.open("C:\\Projects\\openglStart\\openglStart\\fileName.txt");//the path should show the fileName.txt
 	for (int j = 0; j < counter; j++)
 	{
 		file << namee[j] << " ";
@@ -294,7 +294,7 @@ void fileName(string name)
 void readFileName()
 {
 	ifstream input;
-	input.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\fileName.txt");
+	input.open("C:\\Projects\\openglStart\\openglStart\\fileName.txt");
 	for (i = 0; i < 100; i++)
 	{
 		input >> namee[i];
@@ -305,7 +305,7 @@ void readFileName()
 void createFile(string name)//create a new file
 {
 	ofstream file2;
-	file2.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\" + name + ".txt");
+	file2.open("C:\\Projects\\openglStart\\openglStart\\" + name + ".txt");
 	file2 << head_rotate << " " << right_shoulder << " " << right_elbow << " "
 		<< left_shoulder << " " << left_elbow << " " << right_leg << " "
 		<< right_legelbow << " " << left_leg << " " << left_legelbow << " "
@@ -317,7 +317,7 @@ void createFile(string name)//create a new file
 }
 void fileUpReset(string name)//file reset
 {
-	file.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\" + name + ".txt");
+	file.open("C:\\Projects\\openglStart\\openglStart\\" + name + ".txt");
 	file << 0 << " " << 0 << " " << 0 << " " << 0 << " "
 		<< 0 << " " << 0 << " " << 0 << " " << 0 << " "
 		<< 0 << " " << 0 << " " << 0 << " " << 0 << " "
@@ -348,7 +348,7 @@ void animStart(string name, string name2)//start animation
 {
 	//------------last positions----------
 	ifstream input;
-	input.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\" + name + ".txt");
+	input.open("C:\\Projects\\openglStart\\openglStart\\" + name + ".txt");
 	//animLast
 	for (int i = 0; i < 14; i++)
 	{
@@ -373,7 +373,7 @@ void animStart(string name, string name2)//start animation
 
 	//--------first positions-----------
 	ifstream input1;
-	input1.open("C:\\Users\\asuspc\\Documents\\Visual Studio 2015\\Projects\\openglStart\\openglStart\\" + name2 + ".txt");
+	input1.open("C:\\Projects\\openglStart\\openglStart\\" + name2 + ".txt");
 	//animFirst
 	for (int i = 0; i < 14; i++)
 	{
